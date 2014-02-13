@@ -1,0 +1,154 @@
+@CHARSET "UTF-8";
+.bottom_box {
+	height: 200px;
+	background: #E9E8E8;
+	position: relative;
+	margin-bottom: 0px;
+}
+
+.bottom {
+	margin: 0 auto;
+	height: 160px;
+	padding-top: 10px;
+}
+
+.bottom_left {
+	width: 500px;
+	float: left;
+}
+
+.bottom_right {
+	width: 580px;
+	float: right;
+}
+
+.contact_link {
+	padding-bottom: 10px;
+	float: right;
+}
+
+.contact_link li {
+	float: left;
+}
+
+.contact_link li a {
+	display: block;
+	width: 90px;
+	color: #999999;
+	font-size: 14px;
+	text-align: right;
+	text-decoration: none;
+}
+
+.bottom_right p {
+	text-align: right;
+	color: #999999;
+	font-size: 14px;
+	line-height: 28px;
+	clear: both;
+}
+
+.wx {
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	float: left;
+}
+
+.link {
+	width: 400px;
+	position: relative;
+	float: left;
+}
+
+.add {
+	position: absolute;
+	top: 60px;
+	left: 15px;
+}
+
+.add p {
+	color: #999999;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.sina {
+	position: absolute;
+	background: url(../images/sina2_r16_c12.jpg) top;
+	width: 50px;
+	height: 50px;
+	left: 15px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.sina:hover {
+	position: absolute;
+	background: url(../images/sina2_r16_c12.jpg) bottom;
+	width: 50px;
+	height: 50px;
+	left: 15px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.tencent {
+	position: absolute;
+	background: url(../images/tecent2_r16_c16.jpg) top;
+	width: 50px;
+	height: 50px;
+	left: 80px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.tencent:hover {
+	position: absolute;
+	background: url(../images/tecent2_r16_c16.jpg) bottom;
+	width: 50px;
+	height: 50px;
+	left: 80px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.weixin {
+	position: absolute;
+	background: url(../images/weixin2_r16_c20.jpg) top;
+	width: 50px;
+	height: 50px;
+	left: 145px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.weixin:hover {
+	position: absolute;
+	background: url(../images/weixin2_r16_c20.jpg) bottom;
+	width: 50px;
+	height: 50px;
+	left: 145px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.youku {
+	position: absolute;
+	background: url(../images/youku2_r16_c23.jpg) top;
+	width: 50px;
+	height: 50px;
+	left: 210px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.youku:hover {
+	position: absolute;
+	background: url(../images/youku2_r16_c23.jpg) bottom;
+	width: 50px;
+	height: 50px;
+	left: 210px;
+	top: 0px;
+	cursor: pointer;
+}

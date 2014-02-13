@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+       ">
+	<!-- 
+	<bean id="propertyConfigurer" 
+	   class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+				<value>classpath*:applicationContext.properties</value>
+            </list>
+        </property>
+    </bean>
+     -->
+    <context:property-placeholder location="classpath*:applicationContext.properties" ignore-unresolvable="true"  /> 
+     
+    <bean class="com.taotaoti.constants.GlobalConstant">
+		<property name="UC_LOGIN_URL" value="${UC_LOGIN_URL}" />	
+		<property name="UC_LOGOUT_URL" value="${UC_LOGOUT_URL}" />
+		<property name="UC_JUMP_URL" value="${UC_JUMP_URL}" />
+		<property name="UC_HOME_URL" value="${UC_HOME_URL}" />
+		
+		<property name="ADMIN_UC_LOGIN_URL" value="${ADMIN_UC_LOGIN_URL}" />	
+		<property name="ADMIN_UC_LOGOUT_URL" value="${ADMIN_UC_LOGOUT_URL}" />
+		<property name="ADMIN_UC_JUMP_URL" value="${ADMIN_UC_JUMP_URL}" />
+		<property name="ADMIN_UC_HOME_URL" value="${ADMIN_UC_HOME_URL}" />
+		
+		
+		<property name="ERROR" value="${ERROR}" />
+		<property name="ERROR_404" value="${ERROR_404}" />
+		<property name="SYSERROR" value="${SYSERROR}" />
+	</bean>
+</beans>

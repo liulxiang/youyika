@@ -1,0 +1,127 @@
+/*
+SQLyog Ultimate v8.53 
+MySQL - 5.5.25-MariaDB : Database - womiga
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`womiga` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `womiga`;
+
+/*Table structure for table `auth` */
+
+DROP TABLE IF EXISTS `auth`;
+
+CREATE TABLE `auth` (
+  `authid` int(11) NOT NULL AUTO_INCREMENT,
+  `authcode` varchar(50) NOT NULL,
+  PRIMARY KEY (`authid`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+/*Table structure for table `contact_message` */
+
+DROP TABLE IF EXISTS `contact_message`;
+
+CREATE TABLE `contact_message` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(30) NOT NULL,
+  `lastname` varchar(30) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `title` varchar(200) NOT NULL,
+  `message` text NOT NULL,
+  `addTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `statu` int(11) NOT NULL,
+  `isReply` int(11) DEFAULT NULL,
+  `reply_content` text,
+  `reply_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+/*Table structure for table `member` */
+
+DROP TABLE IF EXISTS `member`;
+
+CREATE TABLE `member` (
+  `memberid` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `createtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updatetime` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `roleid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`memberid`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+
+/*Table structure for table `memberinfo` */
+
+DROP TABLE IF EXISTS `memberinfo`;
+
+CREATE TABLE `memberinfo` (
+  `memberid` int(11) NOT NULL,
+  `sex` varchar(10) DEFAULT NULL,
+  `birthday` date DEFAULT NULL,
+  `degree` varchar(100) DEFAULT NULL,
+  `qq` varchar(50) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `weibo` varchar(100) DEFAULT NULL,
+  `address` varchar(100) DEFAULT NULL,
+  `country` varchar(50) DEFAULT NULL,
+  `province` varchar(100) DEFAULT NULL,
+  `city` varchar(100) DEFAULT NULL,
+  `postcode` varchar(20) DEFAULT NULL,
+  `telephone` varchar(50) DEFAULT NULL,
+  `description` text,
+  `remark` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`memberid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Table structure for table `role` */
+
+DROP TABLE IF EXISTS `role`;
+
+CREATE TABLE `role` (
+  `roleid` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `statu` int(11) NOT NULL,
+  PRIMARY KEY (`roleid`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+/*Table structure for table `roleauth` */
+
+DROP TABLE IF EXISTS `roleauth`;
+
+CREATE TABLE `roleauth` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `roleid` int(11) NOT NULL,
+  `authid` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Table structure for table `sys_session_visitor_history` */
+
+DROP TABLE IF EXISTS `sys_session_visitor_history`;
+
+CREATE TABLE `sys_session_visitor_history` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `session_id` varchar(100) NOT NULL,
+  `ip` varchar(50) NOT NULL,
+  `accBrowser` varchar(50) NOT NULL,
+  `accOs` varchar(50) NOT NULL,
+  `onlineTime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `addTime` date NOT NULL,
+  `member_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

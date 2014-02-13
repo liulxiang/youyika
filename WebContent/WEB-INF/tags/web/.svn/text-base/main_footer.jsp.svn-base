@@ -1,0 +1,10 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!-- Footer================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="row-fluid copyright">
+      <div class="span12">&copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="www.shiguangjiaonang.com">时光胶囊</a></div>
+    </div>
+  </div>
+</footer>

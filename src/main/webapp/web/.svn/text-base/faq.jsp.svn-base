@@ -1,0 +1,33 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<div class="container">
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="page-header">
+        <div class="row-fluid">
+          <div class="span12">
+            <h1>帮助中心</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span6">
+      <div class="question-section">
+        <h4>这里都是自己的东西</h4>
+        <p>大家可以尽情的评论 </p>
+      </div>
+      <div class="question-section">
+        <h4>系统全由自己设计完成！</h4>
+        <p> 不会采用任何现成系统架构 </p>
+      </div>
+    </div>
+    <div class="span6">
+      <div class="question-section">
+        <h4>技术分享基本上都是自己平时玩的</h4>
+        <p>努力学习每一天</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+8
+
+dir
+324
+svn://121.197.10.150/game/womiga/src/main/sqldata
+svn://121.197.10.150/game
+
+
+
+2013-10-29T15:56:43.484779Z
+324
+liulxiang
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b390dc63-82c1-48c1-9016-54291d8f74d7
+
+commom_womiga.sql
+file
+
+
+
+
+2013-10-21T03:29:27.677000Z
+4e2f9b3a933004768df71784ec27635e
+2013-10-29T15:56:43.484779Z
+324
+liulxiang
+
+womiga.sql
+file
+
+
+
+
+2013-10-26T05:16:49.850000Z
+98db95feb7dd792130a4e804d4cf3558
+2013-10-29T15:56:43.484779Z
+324
+liulxiang
+

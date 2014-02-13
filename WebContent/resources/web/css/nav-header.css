@@ -1,0 +1,129 @@
+@CHARSET "UTF-8";
+
+.fixed_header #header {
+	position: fixed;
+}
+
+#header {
+	position: relative;
+	z-index: 400;
+	width: 100%;
+	background-color: transparent;
+}
+
+.container_wrap {
+	clear: both;
+	position: relative;
+	z-index: 1;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+#header_main {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #eeeeee;
+}
+
+#header_main .container,.main_menu ul:first-child>li a {
+	height: 88px;
+	line-height: 88px;
+	overflow: hidden;
+}
+
+.header_color .header_bg {
+	background-color: #ffffff;
+	color: #000000;
+	list-style: none;
+}
+
+.header_bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.95;
+	filter: alpha(opacity = 95);
+	z-index: 0;
+}
+
+/*logo*/
+div .logo {
+	float: left;
+}
+
+.logo,.logo a {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	height: 100%;
+}
+
+.logo img {
+	padding: 5px 0;
+	display: block;
+	width: auto;
+	height: auto;
+	max-height: 100%;
+	height: 100% \9;
+	border: 0px;
+	hack: fixes ie8 logo;
+}
+.top_nav{
+	margin-left:20px;
+	text-align: center;
+	float: left;
+}
+
+
+.top_about {
+	text-align: center;
+	float: right;
+}
+
+.top_about ul ,.top_nav ul {
+	list-style: none;
+}
+
+.top_about li,.top_nav li  {
+	float: left;
+	height: 88px;
+	line-height: 88px;
+	vertical-align: middle;
+}
+
+.top_about li a,.top_nav li a  {
+	display: block;
+	width: 80px;
+	height: 88px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif, "微软雅黑";
+	color: #333333;
+}
+
+.top_about li a:hover ,.top_nav li a:hover {
+	display: block;
+	width: 80px;
+	height: 88px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif, "微软雅黑";
+	color: #66b3e1;
+	text-decoration: none;
+}
+
+div .joinus {
+	float: right;
+	height: 100%;
+}
+
+.joinus img {
+	padding: 5px 0;
+	display: block;
+	width: auto;
+	height: auto;
+	max-height: 100%;
+	height: 100% \9;
+	border: 0px;
+	hack: fixes ie8 logo;
+}

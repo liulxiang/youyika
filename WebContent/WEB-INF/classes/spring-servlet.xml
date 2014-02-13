@@ -1,0 +1,171 @@
+<beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd" >
+    
+    
+
+    <!-- 开启controller注解支持 -->
+    <!-- 注：如果base-package=cn.javass 则注解事务不起作用 TODO 读源码-->
+    <context:component-scan base-package="com.taotaoti.**.controller">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+     
+    <!-- ========================= VIEW定义 ========================= -->
+	<mvc:annotation-driven />
+   		<bean id="conversion-service" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"  /> 
+		<context:component-scan base-package="com.taotaoti" />
+	<context:annotation-config />
+	
+
+	<!-- 静态资源不经过SpringMVC，直接交由容器处理 -->
+	<mvc:default-servlet-handler />
+	<!-- annotation默认的方法映射适配器 -->
+	<bean id="handlerMapping"
+		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+	<bean id="handlerAdapter"
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources/ directory -->
+	<mvc:resources mapping="/resources/**" location="/resources/"/>
+	
+	<mvc:view-controller path="/" view-name="redirect:/index"/> 
+	<mvc:view-controller path="/index" view-name="forward:/index.jsp"/> 
+	<mvc:view-controller path="/login" view-name="forward:/other/login.jsp"/> 
+	<mvc:view-controller path="error" view-name="redirect:/other/error.jsp"/>
+	<mvc:view-controller path="/other/error"/>
+	
+	<mvc:view-controller path="/admin/login" view-name="redirect:/admin/login.jsp"/> 
+	
+	<mvc:view-controller path="404" view-name="forward:/web/404Page.jsp"/>
+	<mvc:view-controller path="403" view-name="forward:/web/404Page.jsp"/>
+	
+    <!-- bean name view resolver-->
+    <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" p:order="10"/>  
+    
+	<bean
+		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="defaultContentType" value="text/html" />
+		<property name="ignoreAcceptHeader" value="false" />
+		<property name="favorPathExtension" value="true" />
+		<property name="favorParameter" value="true" />
+		<property name="parameterName" value="format" />
+		<property name="order" value="0" />
+		<property name="mediaTypes">
+			<map>
+				<entry key="json" value="application/json" />
+				<entry key="wml" value="text/vnd.wap.wml"/>
+                <entry key="vnd" value="application/vnd.wap.xhtml+xml"/>
+                <entry key="xhtml" value="application/xhtml+xml"/>
+			</map>
+		</property>
+		<property name="defaultViews">
+			<list>
+			 <!--    <ref bean="defaultViewResolver"/> -->
+				<ref bean="defaultJsonView" />
+			</list>
+		</property>
+		<property name="viewResolvers">  
+             <list>  
+                <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+                    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+                    <property name="contentType" value="text/html"/>
+                    <property name="prefix" value="/"/>
+                    <property name="suffix" value=".jsp"/>
+                </bean>
+            </list>  
+        </property> 
+	</bean>
+	<!-- json view -->
+	<bean id="defaultJsonView"
+		class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" >
+		<property name="contentType" value="application/json;charset=UTF-8" />
+		<property name="disableCaching" value="true" />
+		<!-- p:renderedAttributes="jsonObject" -->
+		<property name="renderedAttributes">
+		   <set>
+		       <value>jsonObject</value>
+		   </set>
+		</property>
+		
+	</bean>
+	<bean
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="order" value="5"/>
+		<property name="suffix" value=".ftl"/>
+		<property name="contentType" value="text/html; charset=utf-8" />
+	</bean>
+	<!-- FreeMarker基础设施及视图解析器配置 -->
+	<bean
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer"
+		p:templateLoaderPath="/WEB-INF/ftl" p:defaultEncoding="UTF-8">
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="classic_compatible">true</prop>
+			</props>
+		</property>
+	</bean>
+	
+ <!-- 默认的视图解析器 在上边的解析错误时使用 (默认使用html)- -->
+	<bean id="defaultViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+	    <property name="contentType" value="text/html"/>        
+	    <property name="prefix" value="/"/>
+	    <property name="suffix" value=".jsp"/>
+	    <property name="order" value="100" />
+	</bean>
+ 
+	<!-- Hessian 启动BeanNameMapping 映射功能
+	<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping">
+	    <property name="defaultHandler" ref="httpRequestHandlerAdapter" />
+	    <property name="order" value="200" />
+	</bean>
+    -->
+ <!--  处理httpRequest的Adapter -->
+   <bean id="httpRequestHandlerAdapter" class="org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter"></bean>
+  
+ 
+ 
+ 
+    <!-- 文件上传相关 -->
+    <bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver"  p:defaultEncoding="utf-8">
+		<property name="maxUploadSize">
+			<value>104857600</value>
+		</property>
+		<property name="maxInMemorySize">
+			<value>4096</value>
+		</property>
+	</bean>
+    
+    
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="message-info" />
+		<property name="useCodeAsDefaultMessage" value="true" />
+	</bean>
+	<!-- 拦截器配置 -->
+	<import resource="classpath:spring-servlet-interceptor.xml"/>
+	
+	
+	<bean id="handlerExceptionResolver" class="com.taotaoti.common.handler.ExceptionHandler">
+	</bean>
+	<bean id="exceptionResolver" class="com.taotaoti.common.handler.ExceptionHandler"> 
+	</bean>
+	
+	
+	
+	
+	
+</beans>

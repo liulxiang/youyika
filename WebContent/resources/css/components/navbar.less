@@ -1,0 +1,136 @@
+@navbar-background-color: @secondary-background;
+@navbar-active-text: @white;
+@navbar-active-background-color: @blue;
+
+@navbar-brand-text: @light-text;
+@navbar-brand-text-hover: @dark-grey;
+
+@navbar-link-color: @grey;
+@navbar-link-color-hover: @white;
+@navbar-link-background-hover: @blue;
+@navbar-link-color-active: @white;
+
+@navbar-dropdown-border: @border-type @border-color @border-size;
+@navbar-dropdown-button-text: @white;
+@navbar-dropdown-button-active-background: @blue;
+
+@navbar-inverse-background: @inverse-background;
+@navbar-inverse-dropdown-button-active-background: @blue;
+
+/*
+NAVBARS
+*/
+
+.navbar {
+  background: @navbar-background-color;
+  padding-top: (@padding * 2);
+  padding-bottom: (@padding * 2);
+  margin-bottom: @margin;
+}
+
+.navbar-nav > .active > a, 
+.navbar-nav > .active > a:hover, 
+.navbar-nav > .active > a:focus {
+  color: @navbar-active-text;
+  background: @navbar-active-background-color;
+}
+
+.navbar-default .navbar-brand {
+  color: @navbar-brand-text;
+}
+
+.navbar-brand {
+  font-family: @heading-copy;
+  text-transform: uppercase;
+  font-size: (@font-size + 0.5);
+}
+
+.navbar-brand a {
+  color: @navbar-brand-text;
+}
+
+.navbar-brand:hover, 
+.navbar-brand:focus {
+  color: @navbar-brand-text-hover;
+}
+
+.navbar-nav > li > a {
+  color: @navbar-link-color;
+  padding-top: (@padding / 2);
+  padding-bottom: (@padding / 2);
+  font-size: (@font-size - 0.125);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: @heading-copy;
+  margin-left: 2px;
+
+  .round-corners;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  background: @navbar-link-background-hover;
+  color: @navbar-link-color-active;
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+  color: @navbar-link-color-hover;
+  background: @navbar-link-background-hover;
+}
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+  color: @navbar-link-color-hover;
+  background: @navbar-link-background-hover;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  .round-corners;
+}
+
+.navbar-form-width {
+  width: 200px;
+}
+
+ul.navbar-nav {
+  margin-left: 0;
+  margin-top: 8px;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  border: @navbar-dropdown-border;
+}
+
+.navbar-nav .dropdown-menu .divider {
+  border-color: @border-color;
+  background: @border-color;
+}
+
+.navbar-nav > .open > a, 
+.navbar-nav > .open > a:hover, 
+.navbar-nav > .open > a:focus {
+  color: @navbar-dropdown-button-text;
+  background-color: @navbar-dropdown-button-active-background;
+}
+
+.navbar-inverse {
+  background: @navbar-inverse-background;
+}
+
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background: @navbar-inverse-dropdown-button-active-background;
+}
+
+.navbar-default {
+  border: 0;
+  border-bottom: @border-size @border-type @border-color;
+
+  border-radius: 0;
+  -moz-border-radius: 0;
+}
+

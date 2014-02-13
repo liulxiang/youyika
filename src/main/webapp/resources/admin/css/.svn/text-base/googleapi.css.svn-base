@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Jockey One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Jockey One'), local('JockeyOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/jockeyone/v3/8Hj8G_JpSADPYrRpzMno2hsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/-g5pDUSRgvxvOl5u-a_WHw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Rancho';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rancho'), url(http://themes.googleusercontent.com/static/fonts/rancho/v3/puZHhCfWV5yqA8Qtz4KZUg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Salsa';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Salsa-Regular'), url(http://themes.googleusercontent.com/static/fonts/salsa/v3/A4KcPjUX7Ams2Jqasy0vzQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff) format('woff');
+}

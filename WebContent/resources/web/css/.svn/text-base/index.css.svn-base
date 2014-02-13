@@ -1,0 +1,10 @@
+.title-font {
+    font: 93px/31px 'Sofia',Arial,sans-serif;
+    margin: 0.5em 0;
+    word-spacing: -14px;
+}
+.title-font {
+    text-shadow: 4px 3px 0 #664C3E;
+    color: #D5D0CE;
+}
+

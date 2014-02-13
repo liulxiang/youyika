@@ -1,0 +1,91 @@
+8
+
+dir
+324
+svn://121.197.10.150/game/womiga/WebRoot/resources/web/fonts/Sofia
+svn://121.197.10.150/game
+
+
+
+2013-10-29T15:56:43.484779Z
+324
+liulxiang
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b390dc63-82c1-48c1-9016-54291d8f74d7
+
+One by Four SIL Open Font License.txt
+file
+
+svn://121.197.10.150/game/womiga/WebRoot/resources/web/fonts/Sofia/One%20by%20Four%20SIL%20Open%20Font%20License.txt
+
+
+2013-10-18T16:48:33.173000Z
+6fab76e2c731edba241fd047c17567f9
+2013-10-29T15:56:43.484779Z
+324
+liulxiang
+
+sofia-regular-webfont.eot
+file
+
+
+
+
+2013-10-18T16:48:33.175000Z
+63c65b2e33a031744993e52820b7d21b
+2013-10-29T15:56:43.484779Z
+324
+liulxiang
+has-props
+
+sofia-regular-webfont.svg
+file
+
+
+
+
+2013-10-18T16:48:33.178000Z
+d4529e89b930af987081d1343e664f36
+2013-10-29T15:56:43.484779Z
+324
+liulxiang
+
+sofia-regular-webfont.ttf
+file
+
+
+
+
+2013-10-18T16:48:33.180000Z
+e77b545aac3ad8d57ce938e329d12e0e
+2013-10-29T15:56:43.484779Z
+324
+liulxiang
+has-props
+
+sofia-regular-webfont.woff
+file
+
+
+
+
+2013-10-18T16:48:33.184000Z
+eb4f9532d1db0d65a39fe064c7a1d928
+2013-10-29T15:56:43.484779Z
+324
+liulxiang
+has-props
+

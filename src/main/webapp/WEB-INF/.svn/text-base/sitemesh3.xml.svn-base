@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+    <!-- Map default decorator. This shall be applied to all paths if no other paths match. -->
+	
+	<mapping>
+		<path>/index</path>
+		<decorator>/WEB-INF/decorators/main-index-layout.jsp</decorator>
+		<exclue>false</exclue>
+	</mapping>
+	<mapping>
+		<path>/</path>
+		<decorator>/WEB-INF/decorators/main-index-layout.jsp</decorator>
+		<exclue>false</exclue>
+	</mapping>
+	<mapping>
+		<path>/index.jsp</path>
+		<decorator>/WEB-INF/decorators/main-index-layout.jsp</decorator>
+		<exclue>false</exclue>
+	</mapping>
+	<mapping>
+		<path>/web/*</path>
+		<decorator>/WEB-INF/decorators/main-web-layout.jsp</decorator>
+		<exclue>false</exclue>
+	</mapping>
+	<mapping>
+		<path>/admin/*</path>
+		<decorator>/WEB-INF/decorators/main-admin-layout.jsp</decorator>
+		<exclue>false</exclue>
+	</mapping>
+	<mapping>
+		<path>/admin/login*</path>
+		<decorator>/WEB-INF/decorators/main-admin-no-layout.jsp</decorator>
+		<exclue>false</exclue>
+	</mapping>
+    <!-- Exclude path from decoration. -->
+    <mapping path="/resources/*" exclue="true"/>
+    <mapping path="/google551a0b7f06a587d9.html" exclue="true"/>
+    
+</sitemesh>

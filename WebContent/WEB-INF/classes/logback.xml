@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="true">
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{40} - %msg%n
+			</pattern>
+		</layout>
+	</appender>
+
+	<!-- 所有日志文件 -->
+	<appender name="AllLog"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>logs/all/%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{40} - %msg%n
+			</pattern>
+		</encoder>
+		<!-- 过滤器，只记录INFO级别的日志
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		 -->
+	</appender>
+	<appender name="taotaotiLog"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>logs/taotaoti/%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{40} - %msg%n
+			</pattern>
+		</encoder>
+		<!-- 过滤器，只记录INFO级别的日志 
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		-->
+	</appender>
+	<!-- logback为java中的包 
+	<logger name="logback" />
+	 -->
+	<!-- 为莫个包下的所有类指定Appender 这里也可以指定类名称例如：com.taotaoti.ClassName -->
+	<logger name="com.taotaoti">
+		<appender-ref ref="patrolLog" />
+	</logger>
+
+	<root>
+	    <level value="ERROR" />
+	    <level value="WARN" />
+	    <level value="DEBUG" />
+	    <level value="INFO" />
+		<appender-ref ref="AllLog" />
+		<appender-ref ref="STDOUT" />
+	</root>
+	
+	
+	
+	
+	
+	
+</configuration>
