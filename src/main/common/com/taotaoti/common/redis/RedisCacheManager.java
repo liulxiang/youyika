@@ -7,8 +7,8 @@ import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.log4j.Logger;
-
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 /**
  * ClassName: RedisCacheManager <br>
@@ -19,7 +19,8 @@ import org.apache.log4j.Logger;
  */
 public class RedisCacheManager {
 	
-	private static final Logger LOG = Logger.getLogger(RedisCacheManager.class);
+	 private static final Log LOG = LogFactory.getLog(RedisCacheManager.class);
+
 
 	//该管理类中维护的client连接集合，每个client均是连接池化的
 	private List<RedisClient> clientList;

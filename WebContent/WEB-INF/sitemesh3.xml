@@ -9,7 +9,7 @@
 	</mapping>
 	<mapping>
 		<path>/</path>
-		<decorator>/WEB-INF/decorators/main-index-layout.jsp</decorator>
+		<decorator>/WEB-INF/decorators/main-web-layout.jsp</decorator>
 		<exclue>false</exclue>
 	</mapping>
 	<mapping>
@@ -36,6 +36,7 @@
     <mapping path="**.html" exclue="true"/>
     <mapping path="/resources/*" exclue="true"/>
     <mapping path="/adx/*" exclue="true"/>
+     <mapping path="/common/index.jsp" exclue="true"/>
     <mapping path="/google551a0b7f06a587d9.html" exclue="true"/>
     
 </sitemesh>

@@ -8,8 +8,6 @@
 </head>
 
 <body>
-<!-- Navbar================================================== -->
-	
 <c:import url="/WEB-INF/tags/web/nav_header.jsp" />
  <sitemesh:write property="body"/>
  <c:import url="/WEB-INF/tags/web/main_footer.jsp"/>

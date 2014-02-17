@@ -2,7 +2,8 @@ package com.taotaoti.common.redis;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.taotaoti.common.utils.RandomUtil;
 
@@ -13,7 +14,8 @@ import com.taotaoti.common.utils.RandomUtil;
  */
 public abstract class BaseRedisCallBack<T> implements RedisCallBack<T> {
 
-	private static final Logger LOG = Logger.getLogger(BaseRedisCallBack.class);
+	private static final Logger LOG = LoggerFactory.getLogger(BaseRedisCallBack.class);
+	
 
 	private Exception e;
 

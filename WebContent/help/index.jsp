@@ -3,8 +3,17 @@
 <link rel="stylesheet" href="<c:url value="/resources/web/css/common-content.css"/>" />
 <link rel="stylesheet" href="<c:url value="/resources/web/css/yangguang-content.css"/>" />
 
-<div class="container youyika">
-    <div class="col-md-3">
+<div class="breadcrumbrow">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Page</a></li>
+				<li class="active"><a href="#">Page</a></li>
+			</ul>
+		</div>
+	</div>
+<div class="container">
+	<div class="col-md-3">
       <div class="list-group">
         <a href="#" class="list-group-item active">Cras justo odio</a>
         <a href="#" class="list-group-item">Dapibus ac facilisis in</a>

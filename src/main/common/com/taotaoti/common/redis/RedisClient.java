@@ -16,14 +16,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-import java.util.concurrent.CountDownLatch;
+
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.ArrayUtils;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.commons.pool.impl.GenericObjectPool;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
+
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.Protocol;
@@ -38,7 +40,7 @@ import redis.clients.util.SafeEncoder;
  */
 public class RedisClient implements RedisOperation, InitializingBean, DisposableBean {
 	
-	private static final Logger LOG = Logger.getLogger(RedisClient.class);
+	private static final Log LOG = LogFactory.getLog(RedisClient.class);
 
 	private String cacheName = "default";
 	

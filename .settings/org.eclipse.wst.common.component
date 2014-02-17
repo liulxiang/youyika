@@ -4,7 +4,7 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/common"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <property name="context-root" value="youyika"/>
         <property name="java-output-path" value="/youyika/build/classes"/>
+        <property name="context-root" value="taotaoti-youyika"/>
     </wb-module>
 </project-modules>
