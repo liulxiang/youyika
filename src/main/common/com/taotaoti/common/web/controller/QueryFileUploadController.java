@@ -51,7 +51,7 @@ public class QueryFileUploadController {
         Iterator<String> itr = request.getFileNames();
         MultipartFile mpf;
         List<Image> list = new LinkedList<Image>();
-        
+        System.out.println("hello");
         while (itr.hasNext()) {
             mpf = request.getFile(itr.next());
             
@@ -60,7 +60,8 @@ public class QueryFileUploadController {
             String newFilename = newFilenameBase + originalFileExtension;
             String storageDirectory = fileUploadDirectory;
             String contentType = mpf.getContentType();
-            
+            storageDirectory=request.getSession().getServletContext().getRealPath("/");
+            System.out.println(storageDirectory);
             File newFile = new File(storageDirectory + "/" + newFilename);
             try {
                 mpf.transferTo(newFile);
@@ -79,8 +80,10 @@ public class QueryFileUploadController {
                 //image = imageDao.create(image);
                 
                 image.setUrl("/picture/"+image.getId());
-                image.setThumbnailUrl("/thumbnail/"+image.getId());
-                image.setDeleteUrl("/delete/"+image.getId());
+                //image.setThumbnailUrl("/thumbnail/"+image.getId());
+                image.setThumbnailUrl("/youyika/"+thumbnailFilename);
+               // image.setDeleteUrl("/delete/"+image.getId());
+                image.setDeleteUrl("/youyika/query/delete/"+1);
                 image.setDeleteType("DELETE");
                 
                 list.add(image);
@@ -127,7 +130,7 @@ public class QueryFileUploadController {
     
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
     public @ResponseBody List delete(@PathVariable Long id) {
-//        Image image = imageDao.get(id);
+        // Image image = imageDao.get(id);
 //        File imageFile = new File(fileUploadDirectory+"/"+image.getNewFilename());
 //        imageFile.delete();
 //        File thumbnailFile = new File(fileUploadDirectory+"/"+image.getThumbnailFilename());

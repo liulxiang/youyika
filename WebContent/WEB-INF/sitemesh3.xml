@@ -37,6 +37,8 @@
     <mapping path="/resources/*" exclue="true"/>
     <mapping path="/adx/*" exclue="true"/>
      <mapping path="/common/index.jsp" exclue="true"/>
+     <mapping path="/common/file_manager_json.jsp" exclue="true"/>
+     <mapping path="/common/upload_json.jsp" exclue="true"/>
     <mapping path="/google551a0b7f06a587d9.html" exclue="true"/>
     
 </sitemesh>
