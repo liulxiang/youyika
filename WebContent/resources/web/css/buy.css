@@ -1,0 +1,59 @@
+
+.brand-index {
+    font-size: 12px;
+    margin: 10px 0 15px;
+    text-align: center;
+}
+.brand-index a {
+    display: inline-block;
+    padding: 2px 6px;
+}
+.brand-index a:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    text-decoration: none;
+}
+.content{
+	border-left: 1px solid #d9e2e2;
+}
+
+
+
+ul.product-sources {
+    margin: 0 0 0 -5%;
+    overflow: hidden;
+}
+ul.product-sources .product-source {
+    float: left;
+    height: 151px;
+    margin: 0 0 3.5% 5%;
+    position: relative;
+    width: 20%;
+    z-index: 1;
+}
+ul.product-sources .product-source img {
+    height: auto;
+    max-height: 110px;
+    width: 100%;
+}
+ul.product-sources .product-source a {
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #424B50;
+    display: block;
+}
+ul.product-sources .product-source a span {
+    display: block;
+    line-height: 1.5;
+}
+ul.product-sources .product-source a span.name {
+    font: 12px/15px "OpenSans";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 24px;
+}
+ul.product-sources .product-source a span.info {
+    color: #74868E;
+    font-size: 12px;
+    line-height: 24px;
+}

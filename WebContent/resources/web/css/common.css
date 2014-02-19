@@ -15,10 +15,6 @@ margin: 0;
 li {
     list-style-type: none;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-size: 12px;
-    font-weight: normal;
-}
 .clearfix{display:block;}
 .under_line{text-decoration:underline;}
 .fl{float:left;}
