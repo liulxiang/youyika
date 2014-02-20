@@ -23,6 +23,12 @@
 		<exclue>false</exclue>
 	</mapping>
 	<mapping>
+		<path>/member/*</path>
+		<decorator>/WEB-INF/decorators/main-member-layout.jsp</decorator>
+		<exclue>false</exclue>
+	</mapping>
+	
+	<mapping>
 		<path>/admin/*</path>
 		<decorator>/WEB-INF/decorators/main-admin-layout.jsp</decorator>
 		<exclue>false</exclue>

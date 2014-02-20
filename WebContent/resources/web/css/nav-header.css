@@ -95,7 +95,7 @@ div .logo {
 
 .top_about li a,.top_nav li a  {
 	display: block;
-	width: 80px;
+	width: 60px;
 	height: 88px;
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif, "微软雅黑";
@@ -104,7 +104,7 @@ div .logo {
 
 .top_about li a:hover ,.top_nav li a:hover {
 	display: block;
-	width: 80px;
+	width: 60px;
 	height: 88px;
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif, "微软雅黑";

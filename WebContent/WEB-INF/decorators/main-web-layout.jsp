@@ -9,7 +9,7 @@
 
 <body>
   <c:import url="/WEB-INF/tags/web/nav_header.jsp" />
-<div class="row youyika nav-common">
+    <div class="row youyika nav-common">
 		<div class="container intro">
 			<div class="intro-item wallet  col-lg-4">
 				<h2>

@@ -8,7 +8,7 @@
          <div class="container">
 			<strong class="logo"> <a href="<c:url value="/index.jsp"/>""> <img
 					src="<c:url value="/resources/web/images/Logo_youyika.png"/>" alt=""></a></strong>
-		   <strong class="joinus"><a href="#app"> <img
+		   <strong class="joinus"><a href="#loginModal" data-toggle="modal"> <img
 					src="<c:url value="/resources/web/images/joinus.png"/>" alt=""></a></strong>
 			<div class="top_nav">
                  <ul>
@@ -17,13 +17,18 @@
                      <li><a href="#buy">礼&nbsp;&nbsp;品</a></li>
                      <li><a href="#buy">卡&nbsp;&nbsp;包</a></li>
                      <li><a href="#buy">过期回收</a></li>
-                 </ul>
+				</ul>
              </div>
              <div class="top_about">
                  <ul>
                      <li><a href="#loginModal" data-toggle="modal">登&nbsp;&nbsp;陆</a></li>
                      <li><a href="#registerModal" data-toggle="modal">注&nbsp;&nbsp;册</a></li>
-                     <li><a href="<c:url value="/help/index.jsp"/>" target="_blank" >关于我们</a></li>
+                     <li><a href="<c:url value="/member/user.jsp"/>"><i
+									class="glyphicon glyphicon-home"></i> 我的主页</a></li>
+                     <li><a href="<c:url value="/member/settings/settings.jsp"/>"><i
+									class="glyphicon glyphicon-cog"></i> 帐号设置</a></li>
+					<li><a href="/logout"><i class="glyphicon glyphicon-off"></i>
+									退出</a></li>
                  </ul>
                  
              </div>
