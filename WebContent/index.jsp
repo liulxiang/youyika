@@ -1,7 +1,8 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <link rel="stylesheet" href="<c:url value="/resources/web/css/common-content.css"/>" />
-<link rel="stylesheet" href="<c:url value="/resources/web/css/yangguang-content.css"/>" />
+<link rel="stylesheet" href="<c:url value="/resources/web/css/index-content.css"/>" />
+<link rel="stylesheet" href="<c:url value="/resources/css/index-scrollpic.css"/>" />
 <div class="row first-row">
     <div class="col-lg-12">
       <div id="carousel-example-generic" class="carousel slide">
@@ -56,10 +57,212 @@
 <script>
 $('.carousel').carousel();
 </script>
-
-<div class="row"> 
-     <h1></h1>
+<div class="clearfix middleDiv container tc">
+  <h2>全国最大的购物卡交易平台---优易卡</h2>
+  <p> 为你节省生活的每一分</p>
 </div>
+<div class="row well">
+  <div class="container">
+<div class="wrapperBox thLeft scrollpic-index">
+  	  <div class="wrapper">
+  	     <div class="downContent">
+  	     	<ul>
+							
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/1699725983.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> 
+						<img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						<li>
+						<a href="#"> <img
+												src="resources/web/images/index/card/2075427636.jpg" class="thumbnail">
+										</a>
+											<p class="">
+												<b>￥ wwwwwwwww</b>
+											</p>
+											<p>
+												<a href="#">wwwwwwwwwwwww</a>
+											</p>
+						</li>
+						
+                       
+  	     		
+  	     	</ul>
+  	     </div>
+  	  </div>
+  	</div>
+
+  	<div  class="tc">
+  	  <p>
+        <a class="btn btn-lg btn-primary btn-shadow bs3-link" href="#" target="_blank" role="button">查看更多购物卡</a>
+      </p>
+  </div>
+  
+</div>
+
+<script src="<c:url value="/resources/js/jquery.scrollpic.js"/>" type="text/javascript"></script> 
+ 
+ <script type="text/javascript">
+$(function(){
+  $('.scrollpic-index').hhScrollpic({
+ 			scrollPicMth:7,  //每页显示个数
+			defaultSpeed : 1000,   //默认滚动时间  点击按钮滚动时间
+			speed : 5000   //自动播放滚动时间
+ 	});
+});
+</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="banner4box">
 	<a name="fn"></a>
@@ -87,16 +290,6 @@ $('.carousel').carousel();
 		</div>
 	</div>
 </div>
-
-
-<!--banner5_start-->
- <div class="banner5box">
-     <a name="app"></a>
-     <div class="banner5">
-         <input type="button" name="button3" id="button3" value="" class="app_button">
-     </div>
- </div>
- <!--banner5_end-->
 
 <div class="banner8">
 	<div class="linkstyle">

@@ -3,8 +3,6 @@
 <link rel="stylesheet"
 	href="<c:url value="/resources/web/css/common-content.css"/>" />
 <link rel="stylesheet"
-	href="<c:url value="/resources/web/css/yangguang-content.css"/>" />
-<link rel="stylesheet"
 	href="<c:url value="/resources/web/css/buy-card.css"/>" />
 
 <div class="breadcrumbrow">

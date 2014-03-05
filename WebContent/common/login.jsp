@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <link rel="stylesheet" href="<c:url value="/resources/web/css/common-content.css"/>" />
-<link rel="stylesheet" href="<c:url value="/resources/web/css/yangguang-content.css"/>" />
+<link rel="stylesheet" href="<c:url value="/resources/web/css/login.css"/>" />
 <div class="row first-row">
     <div class="col-lg-12">
       <div id="carousel-example-generic" class="carousel slide">
@@ -15,21 +15,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="resources/web/images/index/youyika_index_1.jpg" alt="">
+            <img src="<c:url value="/resources/web/images/index/youyika_index_1.jpg"/>" alt="">
             <div class="carousel-caption">
               <h3>Caption 1</h3>
               <p>scotch, scothity, scotch, scotch</p>
             </div>
           </div>
           <div class="item">
-            <img src="resources/web/images/index/youyika_index_2.jpg" alt="">
+            <img src="<c:url value="/resources/web/images/index/youyika_index_1.jpg"/>" alt="">
             <div class="carousel-caption">
               <h3>Caption 2</h3>
               <p>scotch, scothity, scotch, scotch</p>
             </div>
           </div>
           <div class="item">
-            <img src="resources/web/images/index/youyika_index_1.jpg" alt="">
+            <img src="<c:url value="/resources/web/images/index/youyika_index_1.jpg"/>" alt="">
             <div class="carousel-caption">
               <h3>Caption 3</h3>
               <p>scotch, scothity, scotch, scotch</p>

@@ -8,7 +8,7 @@
          <div class="container">
 			<strong class="logo"> <a href="<c:url value="/index.jsp"/>""> <img
 					src="<c:url value="/resources/web/images/Logo_youyika.png"/>" alt=""></a></strong>
-		   <strong class="joinus"><a href="#loginModal" data-toggle="modal"> <img
+		   <strong class="joinus"><a href="<c:url value="/member/order/"/>" data-toggle="modal"> <img
 					src="<c:url value="/resources/web/images/joinus.png"/>" alt=""></a></strong>
 			<div class="top_nav">
                  <ul>

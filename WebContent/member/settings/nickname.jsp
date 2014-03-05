@@ -2,8 +2,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <link rel="stylesheet"
 	href="<c:url value="/resources/web/css/common-content.css"/>" />
-<link rel="stylesheet"
-	href="<c:url value="/resources/web/css/yangguang-content.css"/>" />
 
 <div class="breadcrumbrow">
 	<div class="container">
