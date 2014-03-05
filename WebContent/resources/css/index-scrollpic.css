@@ -1,0 +1,95 @@
+.thLeft {
+	float: left;
+}
+
+.wrapperBox {
+	overflow: hidden;
+	margin-left: 20px;
+	margin-right: 100px;
+	zoom: 1;
+	position: relative;
+	height: 200px;
+	
+}
+
+.wrapper {
+	font-family: Tahoma, Geneva, sans-serif;
+	position: relative;
+}
+
+.up {
+	padding-top: 10px;
+	height: 25px;
+}
+
+.up span {
+	width: auto;
+	height: auto;
+	padding: 0;
+	
+}
+
+.up ul li {
+	width: 6px;
+	height: 6px;
+	background: url(../img/nav-index.jpg) no-repeat -34px -5px;
+	margin-right: 2px;
+	text-indent: -99999px;
+	float: left;
+	display: none;
+}
+
+.up ul li.current {
+	color: #069;
+	width: 6px;
+	height: 6px;
+	background: url(../img/nav-index.jpg) no-repeat -21px -5px;
+	margin-right: 2px;
+	display: none;
+}
+
+.buttom {
+	height: 20px;
+}
+
+ul.yb_box_topbs {
+	float: left;
+	margin: 5px 6px 5px 8px;
+}
+/*
+.up span.buttom_left,.up span.buttom_right {
+	cursor: pointer;
+	width: 15px;
+	float: left;
+	height: 15px;
+	background: url(../img/nav-index.jpg) no-repeat;
+}
+*/
+.up span.buttom_right {
+	background-position: right 0;
+}
+
+.downContent {
+	position: relative;
+	width: 100%;
+}
+.downContent ul{
+   margin-top:20px;
+	position: absolute;
+}
+.downContent li {
+	width: 145px;
+	margin-right: 20px;
+	float: left;
+	overflow: hidden;
+}
+
+.downContent li p {
+	width: 145px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.downContent li a img{
+	width: 145px;
+}
